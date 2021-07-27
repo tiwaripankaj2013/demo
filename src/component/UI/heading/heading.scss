@@ -1,0 +1,14 @@
+@import '../../../styles//var';
+
+.h1{
+   font-family: inherit;
+   font-size: 3rem;
+   line-height: 3.5rem;
+}
+.h3{font-family:$secondaryFont;
+   font-weight: 300;
+   font-size: 1.25rem;
+   line-height: 1.5rem;
+   margin:0;
+   padding: 0;
+}

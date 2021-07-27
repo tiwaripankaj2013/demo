@@ -1,0 +1,23 @@
+@import '../../../styles/var';
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+@mixin make-container($padding-x: $container-padding-x) {
+   width: 100%;
+   padding-right: $padding-x;
+   padding-left: $padding-x;
+   margin-right: auto;
+   margin-left: auto;
+ }
+ .container{
+    position: relative;
+    margin: 0;
+    width: 100%;
+    background: $gray-100;
+    padding: 2rem 6.75rem ;
+    box-sizing: border-box;
+ }

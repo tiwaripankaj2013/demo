@@ -1,0 +1,12 @@
+@import "../../../styles/var"; 
+.card{
+   box-shadow:0px 2px 9px 2px $gray-150 ;
+   background-color: $white;
+   border-radius: 1rem;
+   padding: 1rem 1.5rem;
+}
+
+.card_leaf{
+   border-radius:5.625rem 0;
+   padding-bottom: 2.5rem;
+}
