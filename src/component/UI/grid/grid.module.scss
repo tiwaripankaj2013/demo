@@ -22,10 +22,11 @@ $alignItems:(
 .Grid{
    &_container{
       display: flex;
-      flex: wrap;
+      flex-wrap: wrap;
    }
    &_item{
       display: block;
+      width: 100%;
    }
    @for $i from 1 to 12{
       &_cols_#{$i}{
@@ -56,6 +57,7 @@ $alignItems:(
    @each $name,$value in $spacing {
       &_spacing_#{$name} > &_item{
          padding: $value;
+         box-sizing: border-box;
       }
    } 
    @each $value in $justifyContent{

@@ -5,6 +5,8 @@ body{
    line-height: 1.25em;
    font-weight: 400;
    color: $gray-600;
+   margin: 0;
+   background: $gray-200;
    
 }
 .text_right{text-align: right;}
@@ -17,3 +19,7 @@ body{
 
 .opacity_75{opacity: 0.75;}
 .w_100{width:100%;}
+.py_6{
+padding-top: 1.5rem;
+padding-bottom: 1.5rem;
+}

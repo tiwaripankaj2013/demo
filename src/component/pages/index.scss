@@ -1,4 +1,5 @@
 @import '../../styles/var';
+@import '../../styles/color';
 // .title{
 //     display: inline-block;
 //     font-family: $secondaryFont;
@@ -64,6 +65,7 @@
     min-height: 22.8125rem;
     box-sizing: border-box;
     margin-top: 1rem;
+    background-repeat: no-repeat;
     .media_heading{
        font-size: 1.25rem;
        font-weight: 300;

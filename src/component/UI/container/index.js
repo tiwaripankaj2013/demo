@@ -1,8 +1,8 @@
 import React from 'react';
 import './container.scss';
-export const Container = ({children}) => {
+export const Container = ({className,children}) => {
    return (
-<div  className="container">
+<div  className={`container ${className}`}>
    {children}
 </div>
 )

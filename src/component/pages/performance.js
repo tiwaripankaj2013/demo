@@ -21,7 +21,7 @@ const Performance = () => {
                 </TabPane>
                 <TabPane tabKey="1" tabHeader="Last Week">
                 <div className="bg_yellow w_100" style={{minHeight:'50vh'}}>
-                    <p>content of last week </p>
+                    <p className="text_center text_white">content of last week </p>
                 </div>
                 <div className="tabFooter text_right"><span className="more_btn"><span>More </span><AngleRightIcon /></span></div>
                 </TabPane>
