@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container } from '../UI/container';
 import { Grid } from '../UI/grid';
+import Placeholder from '../UI/placeholder';
 import Compliance from './compliance';
 import Media from './media';
 // import {Leaf} from '../UI/leaf/index';
@@ -14,7 +15,7 @@ const DashBoard = () => {
                     <Performance />
                 </Grid>
                 <Grid item xs={12} sm={12} md={6} lg={4}>
-                    <Compliance />
+                    <Compliance title="Overall Compliance" subtitle="May 15-22" content={<Placeholder content=" content of compliance" />} />
                     <Media />
                 </Grid>
             </Grid>
