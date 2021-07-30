@@ -4,18 +4,24 @@ import { PlayIcon } from '../UI/icon/Icon';
 import './index.scss';
 import Modal from '../UI/modal';
 import useModal from '../UI/modal/useModal';
-const Media = ({header,footerHeader,footerSubtitle,image,videoLink,videoTitle}) => {
+const Media = (props) => {
     const {isShowing, toggle} = useModal();
     return(
         <>
-        <div className="media" style={{backgroundImage: `url(${image})`}}>
-            <H3 className="text_white media_heading">{header}</H3>
+        <div className="media" style={{backgroundImage: `url(${props.image})`}}>
+            {/*  value will pass any dynamic  heading or value */}
+            <H3 className="text_white media_heading">{props.header}</H3>
+            {/*  action will created when clicking the play button */}
             <div className="media_play"  ><PlayIcon onClick={toggle}/></div>
             <div className="media_footer">
-                <span className="title">{footerHeader}</span>
-                <span className="subTitle">{footerSubtitle}</span></div>
+                <span className="title">{props.footerHeader}</span>
+                <span className="subTitle">{props.footerSubtitle}</span></div>
         </div>
-        <Modal isShowing={isShowing} hide={toggle} content={<iframe width="960" height="480" src={`${videoLink}?autoplay=1`} title={videoTitle} allow='autoplay' frameborder="0"  allowfullscreen="allowfullscreen"></iframe>} />
+        {/* creating modal for iframe for video playing */}
+        <Modal isShowing={isShowing} hide={toggle} 
+                content={<iframe src={`${props.videoLink}?autoplay=1`} 
+                title={props.videoTitle} allow='autoplay' frameborder="0" 
+                allowfullscreen="allowfullscreen"></iframe>} />
         </>
     )
 }

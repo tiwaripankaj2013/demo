@@ -2,14 +2,15 @@ import React from 'react';
 import { CardLeaf } from '../UI/card';
 import {H3} from '../UI/heading';
 
-const Compliance = ({header,subHeader,contentArea}) => {
+const Compliance = (props) => {
     return(
         <CardLeaf>
             <div className="leafHeading">
-                <H3 className="text_black2">{header}</H3>
-                <span className="subtittle">{subHeader}</span>
+                {/*  value will pass any dynamic  heading or value */}
+                <H3 className="text_black2">{props.header}</H3>
+                <span className="subtittle">{props.subHeader}</span>
             </div>
-            {contentArea}
+            {props.contentArea}
         </CardLeaf>
     )
 }

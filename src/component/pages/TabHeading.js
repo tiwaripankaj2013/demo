@@ -2,13 +2,15 @@ import React from 'react';
 import {H3} from '../UI/heading/index';
 import { Leaf } from '../UI/leaf';
 import './index.scss'; 
-const TabHeadeing = ({icon,tittle,subTitle}) => {
+const TabHeadeing = (props) => {
     return(
         <div className="tabHeading">
-            <Leaf>{icon}</Leaf>
+            {/*  this card is used for all header creation part */}
+            <Leaf>{props.icon}</Leaf>
             <div className="titleWrapper">
-            <H3 className="text_black2">{tittle}</H3>
-            <span className="subtittle">{subTitle}</span>
+                {/*  value will pass any dynamic  heading or value */}
+                <H3 className="text_black2">{props.title}</H3>
+                <span className="subtittle">{props.subTitle}</span>
             </div>
         </div>
     )
