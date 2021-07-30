@@ -9,11 +9,25 @@ import Performance from './performance';
 import mediaImages from '../../assets/media.png';
 const DashBoard = () => {
 
+    const tabData =[
+            {title:"Yesterday",
+            content:"content",},
+            {title:"Last Week",
+            content:"last week content",}
+        ]
+    
     return (
         <Container className="bg_gray2 py_6 m_0 container-sm">
             <Grid container spacing='sm' aligItems='center'>
                 <Grid item xs={12} sm={12} md={8} lg={8}>
-                    <Performance logo={<PerformanceIcon/>} header="Performance" subHeader="May 15" link="https://www.figma.com/" />
+                    <Performance 
+                        logo={<PerformanceIcon/>}
+                        header="Performance"
+                        subHeader="May 15" 
+                        link="https://www.figma.com/"
+                        tabContent={tabData}
+                    />
+
                 </Grid>
                 <Grid item xs={12} sm={12} md={6} lg={4}>
                     <Compliance
