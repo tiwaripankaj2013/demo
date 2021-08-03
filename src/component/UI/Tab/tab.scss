@@ -9,6 +9,9 @@
   padding-top: 0rem;
   background:$white;
   position:relative;
+  @media (min-width:600 px){
+    display: inline-flex;
+    }
 }
 
 .tabContent{
@@ -42,7 +45,7 @@ color:$gray-800;
 &:hover,&:focus{cursor: pointer;}
 &.active{border-bottom-color:$brand;
     color:$black2;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.0625rem;
 }
 }

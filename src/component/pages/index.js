@@ -6,7 +6,7 @@ import Placeholder from '../UI/placeholder';
 import Compliance from './compliance';
 import Media from './media';
 import Performance from './performance';
-import mediaImages from '../../assets/media.png';
+import mediaImages from '../../assets/video-img.png';
 const DashBoard = () => {
     {/*  creating dynamic tab array for the performace card */}
     const tabData =[
@@ -19,7 +19,7 @@ const DashBoard = () => {
     return (
         <Container className="bg_gray2 py_6 m_0 container-sm">
             <Grid container spacing='sm' aligItems='center'>
-                <Grid item xs={12} sm={12} md={8} lg={8}>
+                <Grid item xs={12} sm={12} md={12} lg={8}>
                     {/*  we passing dynamic value to performance card */}
                     <Performance 
                         logo={<PerformanceIcon/>}
@@ -31,7 +31,7 @@ const DashBoard = () => {
                     />
 
                 </Grid>
-                <Grid item xs={12} sm={12} md={6} lg={4}>
+                <Grid item xs={12} sm={12} md={12} lg={4}>
                     {/*  we passing dynamic value to compliance card */}
                     <Compliance
                          header="Overall Compliance" 
