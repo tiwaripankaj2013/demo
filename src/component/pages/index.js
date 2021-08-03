@@ -44,7 +44,7 @@ const DashBoard = () => {
                         footerHeader="New Procedures for Compliance" 
                         footerSubtitle="Prepared Foods Production" 
                         image={mediaImages} 
-                        videoLink="https://www.youtube.com/embed/9xwazD5SyVg" 
+                        videoLink="https://www.youtube.com/embed/0hGK7qiQ6WA" 
                         videoTitle="placeholder video" />
                 </Grid>
             </Grid>

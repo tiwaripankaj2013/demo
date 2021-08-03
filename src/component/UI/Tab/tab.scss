@@ -1,51 +1,62 @@
-@import "../../../styles/var"; 
-.tab{
-  width:100%;
-  margin:0;
-  padding:0;
-}
-.tabHeader{
-  padding:1rem 0;
-  padding-top: 0rem;
-  background:$white;
-  position:relative;
-  @media (min-width:600 px){
-    display: inline-flex;
+@import "../../../styles/var";
+.tab {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    .tabHeader {
+        padding: 1rem 0;
+        padding-top: 0rem;
+        background: $white;
+        position: relative;
+        @media (min-width:600px){
+        display: inline-flex;
+        }
+        
+        .tabMenu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+        .tabMenuItem {
+            display: inline-flex;
+            align-items: center;
+            margin: 0;
+            margin-right: 1.875rem;
+            font-weight: 400;
+            font-size: 0.875rem;
+            line-height: 1.1875rem;
+            text-decoration: none;
+            background: transparent;
+            padding: 0;
+            padding-bottom: 0.3125rem;
+            border-radius: 0;
+            border-bottom: 0.35rem solid transparent;
+            color: $gray-800;
+            &:last-child {
+                margin-right: 0;
+            }
+            .label {
+                font-size: inherit;
+                line-height: inherit;
+            }
+            &:hover,
+            &:focus {
+                cursor: pointer;
+            }
+            &.active {
+                border-bottom-color: $brand;
+                color: $black2;
+                font-weight: 500;
+                line-height: 1.0625rem;
+            }
+        }
     }
-}
-
-.tabContent{
-  display:none;
-  transition:0.3s ease-in;
-  &.active{display:block}
-}
-.tabMenu{
-list-style:none;
-margin:0;
-padding:0;
-display:inline-block;
-}
-.tabMenuItem{
-display:inline-flex;
-align-items:center;
-margin:0;
-margin-right: 1.875rem;
-font-weight: 400;
-font-size: 0.875rem;
-line-height: 1.0625rem;
-text-decoration:none;
-background:transparent;
-padding:0;
-padding-bottom: 0.3125rem;
-border-radius:0;
-border-bottom: 0.35rem solid transparent;
-color:$gray-800;
-&:last-child{margin-right:0;}
-.label{font-size:inherit; line-height:inherit;}
-&:hover,&:focus{cursor: pointer;}
-&.active{border-bottom-color:$brand;
-    color:$black2;
-    font-weight: 500;
-    line-height: 1.0625rem;
-}
+    .tabContent {
+        display: none;
+        transition: 0.3s ease-in;
+        &.active {
+            display: block
+        }
+    }
 }
