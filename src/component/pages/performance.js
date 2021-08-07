@@ -23,7 +23,7 @@ const Performance = (props) => {
                     ))
                 }
             </Tabs>
-            <div className="tabFooter text_right"><span className="more_btn" href={props.link}><span>{props.linkName} </span><AngleRightIcon /></span></div>
+            <div className="tabFooter text_right"><a target="_blank" className="more_btn" to={props.link}><span>{props.linkName} </span><AngleRightIcon /></a></div>
         </Card>
     )
 }
