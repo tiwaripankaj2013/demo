@@ -1,3 +1,4 @@
+@use "sass:math";
 $spacing:(
    'sm':0.5rem,
    'md':1rem,
@@ -31,27 +32,27 @@ $alignItems:(
    }
    @for $i from 1 to 12{
       &_cols_#{$i}{
-         flex-basis: $i/12*100%;
+         flex-basis: math.div($i,12) * 100%;
       }
    }
    @include breakpoint('sm'){
       @for $i from 1 to 12{
          &_sm_#{$i}{
-            flex-basis: $i/12*100%;
+            flex-basis: (math.div($i,12)100%);
          }
       }
    }
    @include breakpoint('md'){
       @for $i from 1 to 12{
          &_md_#{$i}{
-            flex-basis: $i/12*100%;
+            flex-basis: (math.div($i,12)*100%);
          }
       }
    }
    @include breakpoint('lg'){
       @for $i from 1 to 12{
          &_lg_#{$i}{
-            flex-basis: $i/12*100%;
+            flex-basis: (math.div($i,12)100%);
          }
       }
    }

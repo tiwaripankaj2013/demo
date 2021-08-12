@@ -5,7 +5,7 @@ import { PerformanceIcon } from '../UI/icon/Icon';
 import Placeholder from '../UI/placeholder';
 import Compliance from './compliance';
 import Media from './media';
-import Performance from './performance';
+import Performance from './Performance';
 import mediaImages from '../../assets/video-img.png';
 const DashBoard = () => {
     {/*  creating dynamic tab array for the performace card */}
