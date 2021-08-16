@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {BrowserRouter as Router, Link} from 'react-router-dom';
 import { Tabs,TabPane} from '../UI/Tab';
 import {AngleRightIcon } from '../UI/icon/Icon';
 import { TabHeadeing } from './TabHeading';
@@ -10,10 +11,15 @@ const Performance = (props) => {
         setCurrentKey(currentKey);
     };
     return (
-        <Card>
+        <Router>
+        <Card data-testid="performanceCard">
             {/*  value will pass any dynamic  heading or value */}
             <Tabs activeKey={currentKey} onChange={onChange}
-                tabHeadingContent={<TabHeadeing icon={props.logo} title={props.header} subTitle={props.subHeader} />}>
+                tabHeadingContent={<TabHeadeing data-testid="cardHeading" icon={props.logo} 
+                title={props.header} 
+                subTitle={props.subHeader} />}
+                data-testid="tabs"
+                >
                     {/*  we creating array map to create dynamic tabs */}
                 {
                     props.tabContent.map((tab,index) =>(
@@ -23,8 +29,11 @@ const Performance = (props) => {
                     ))
                 }
             </Tabs>
-            <div className="tabFooter text_right"><a target="_blank" className="more_btn" to={props.link}><span>{props.linkName} </span><AngleRightIcon /></a></div>
+            <div className="tabFooter text_right">
+                <Link target="_blank" rel="noreferrer noopener" className="more_btn" to={props.link}>
+                   <> <span>{props.linkName}</span><AngleRightIcon /></></Link></div>
         </Card>
+        </Router>
     )
 }
 

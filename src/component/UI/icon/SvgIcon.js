@@ -1,10 +1,8 @@
 import React from 'react';
 
 const SvgIcon = ( WrappedComponent) => {
-   return class extends React.Component {
-    
+   return class SvgIcon extends React.Component {
       render() {
-        
          let {style,onClick} = this.props;
          const _Style = {...style}
         return(

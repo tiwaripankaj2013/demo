@@ -20,8 +20,8 @@ const Media = (props) => {
         {/* creating modal for iframe for video playing */}
         <Modal isShowing={isShowing} hide={toggle} 
                 content={<iframe src={`${props.videoLink}?autoplay=1`} 
-                title={props.videoTitle} allow='autoplay' frameborder="0" 
-                allowfullscreen="allowfullscreen"></iframe>} />
+                title={props.videoTitle} allow='autoplay' frameBorder="0" 
+                allowFullScreen="allowfullscreen"></iframe>} />
         </>
     )
 }

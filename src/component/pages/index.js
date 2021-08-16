@@ -8,7 +8,7 @@ import Media from './media';
 import Performance from './Performance';
 import mediaImages from '../../assets/video-img.png';
 const DashBoard = () => {
-    {/*  creating dynamic tab array for the performace card */}
+    /*  creating dynamic tab array for the performace card */
     const tabData =[
             {title:"Yesterday",
             content:"content",},

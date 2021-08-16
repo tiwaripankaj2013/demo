@@ -19,7 +19,7 @@ const TabPane = ({tabKey, tabHeader, activeKey, onChange }) => {
 };
 
 const Tabs = ({ children, activeKey, onChange , tabHeadingContent}) => {
-  {/* tab array will be looped and tabsection created here*/}
+  /* tab array will be looped and tabsection created here*/
   return (
     <div className="tab">
       <div className="tabHeader">
