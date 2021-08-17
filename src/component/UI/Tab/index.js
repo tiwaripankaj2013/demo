@@ -31,13 +31,13 @@ const Tabs = ({ children, activeKey, onChange , tabHeadingContent}) => {
           </ul>
         
       </div>
-      <>
+      <React.Fragment>
         {Children.map(children, (child) => {
           if (child.props.tabKey === activeKey) {
             return child.props.children;
           }
         })}
-      </>
+      </React.Fragment>
     </div>
   );
 };

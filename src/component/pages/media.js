@@ -7,7 +7,7 @@ import useModal from '../UI/modal/useModal';
 const Media = (props) => {
     const {isShowing, toggle} = useModal();
     return(
-        <>
+        <React.Fragment>
         <div className="media" style={{backgroundImage: `url(${props.image})`}}>
             {/*  value will pass any dynamic  heading or value */}
             <H3 className="text_white media_heading">{props.header}</H3>
@@ -22,7 +22,7 @@ const Media = (props) => {
                 content={<iframe src={`${props.videoLink}?autoplay=1`} 
                 title={props.videoTitle} allow='autoplay' frameBorder="0" 
                 allowFullScreen="allowfullscreen"></iframe>} />
-        </>
+        </React.Fragment>
     )
 }
 export default Media;   

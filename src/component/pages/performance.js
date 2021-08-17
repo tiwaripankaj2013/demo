@@ -31,7 +31,7 @@ const Performance = (props) => {
             </Tabs>
             <div className="tabFooter text_right">
                 <Link target="_blank" rel="noreferrer noopener" className="more_btn" to={props.link}>
-                   <> <span>{props.linkName}</span><AngleRightIcon /></></Link></div>
+                   <React.Fragment> <span>{props.linkName}</span><AngleRightIcon /></React.Fragment></Link></div>
         </Card>
         </Router>
     )
