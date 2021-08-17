@@ -1,9 +1,9 @@
 import React from 'react';
 import './container.scss';
 export const Container = ({className,children}) => {
-   return (
-<div  className={`container ${className}`}>
-   {children}
-</div>
-)
+  return (
+    <div  className={`container ${className}`}>
+      {children}
+    </div>
+  );
 };

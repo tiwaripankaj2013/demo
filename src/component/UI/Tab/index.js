@@ -13,7 +13,7 @@ export const TabContents = (props) => {
 const TabPane = ({tabKey, tabHeader, activeKey, onChange }) => {
   return (
     <li className={`tabMenuItem ${tabKey === activeKey ? 'active' : ''}`} onClick={() => onChange && onChange(tabKey)}>
-     <span className="label">{tabHeader}</span>
+      <span className="label">{tabHeader}</span>
     </li>
   );
 };
@@ -23,21 +23,21 @@ const Tabs = ({ children, activeKey, onChange , tabHeadingContent}) => {
   return (
     <div className="tab">
       <div className="tabHeader">
-          {tabHeadingContent}
-          <ul className="tabMenu">
-            {Children.map(children, (child) => {
-              return cloneElement(child, { activeKey, onChange });
-            })}
-          </ul>
+        {tabHeadingContent}
+        <ul className="tabMenu">
+          {Children.map(children, (child) => {
+            return cloneElement(child, { activeKey, onChange });
+          })}
+        </ul>
         
       </div>
-      <>
+      <React.Fragment>
         {Children.map(children, (child) => {
           if (child.props.tabKey === activeKey) {
             return child.props.children;
           }
         })}
-      </>
+      </React.Fragment>
     </div>
   );
 };

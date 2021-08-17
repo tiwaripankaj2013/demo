@@ -1,0 +1,43 @@
+{
+  "env":{
+      "browser":true,
+      "jest":true
+      },
+  "parser":"babel-eslint",
+  "plugins":[
+    "import",
+    "react",
+    "react-hooks"
+  ],
+  "rules":{
+    "eqeqeq": "off",
+    "curly": "error",
+    "quotes": ["warn", "single"],
+    "newline-before-return":"warn",
+    "no-shadow":"off",
+    "no-console":"warn",
+    "consistent-return":"warn",
+    "no-unused-expressions":"warn",
+    "react/prop-types": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/react-in-jsx-scope":"off",
+    "react/jsx-fragments" : [0, "element"],
+    "indent"           : [1, 2],
+    "no-else-return"   : 1,
+    "semi"             : [1, "always"],
+    "space-unary-ops"  : 2
+  },
+  "extends":[
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+     
+  ],
+  "settings":{
+    "react":{
+      "version":"latest"
+    }
+  }
+}
