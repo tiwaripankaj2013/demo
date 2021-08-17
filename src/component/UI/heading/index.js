@@ -6,8 +6,8 @@ import './heading.scss';
 // export const H2 =  (className,children) => { 
 //    return(<h2 className={`h2 ${className}`}>{children}</h2>)}
 export const H3 = ({className,children}) => {
-   return (<h3 className={`h3 ${className}`}>{children}</h3>)
-}
+  return (<h3 className={`h3 ${className}`}>{children}</h3>);
+};
 // export const H4 = (className,children) => {
 //    return (<h4 className={`h4 ${className}`}>{children}</h4>)
 // }

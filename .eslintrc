@@ -12,17 +12,21 @@
   "rules":{
     "eqeqeq": "off",
     "curly": "error",
-    "quotes": ["warn", "double"],
+    "quotes": ["warn", "single"],
     "newline-before-return":"warn",
-    "no-shadow":"warn",
+    "no-shadow":"off",
     "no-console":"warn",
     "consistent-return":"warn",
     "no-unused-expressions":"warn",
     "react/prop-types": "off",
-        "indent"           : [1, 2],
-        "no-else-return"   : 1,
-        "semi"             : [1, "always"],
-        "space-unary-ops"  : 2
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/react-in-jsx-scope":"off",
+    "react/jsx-fragments" : [0, "element"],
+    "indent"           : [1, 2],
+    "no-else-return"   : 1,
+    "semi"             : [1, "always"],
+    "space-unary-ops"  : 2
   },
   "extends":[
     "eslint:recommended",
@@ -30,5 +34,10 @@
     "plugin:import/errors",
     "plugin:import/warnings"
      
-  ]
+  ],
+  "settings":{
+    "react":{
+      "version":"latest"
+    }
+  }
 }

@@ -1,10 +1,10 @@
 import React from 'react';
 import './card.scss';
 export const Card = ({children,className}) => {
-   return (<div className={`card ${className}`}>
-      {children}
-   </div>)
-}
+  return (<div className={`card ${className}`}>
+    {children}
+  </div>);
+};
 // export const CardHeader = () => {
 //    return (<div className="card_header"> 
 //    <span className="card_header_icon"><Leaf/> </span><p className="title">Today’s Tasks
@@ -17,7 +17,7 @@ export const Card = ({children,className}) => {
 // }
 
 export const CardLeaf = ({children,className}) => {
-   return (<div className={`card card_leaf ${className}`}>
-      {children}
-   </div>)
-}
+  return (<div className={`card card_leaf ${className}`}>
+    {children}
+  </div>);
+};

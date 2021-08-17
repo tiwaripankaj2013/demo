@@ -12,7 +12,7 @@ const Modal = ({ isShowing, hide,content }) => isShowing ? ReactDOM.createPortal
           </button>
         </div>
         <div className="video-container">
-        {content}
+          {content}
         </div>
       </div>
     </div>
