@@ -51,5 +51,4 @@ const DashBoard = () => {
     </Container>
   );
 };
-
 export default DashBoard;

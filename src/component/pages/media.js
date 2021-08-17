@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { H3 } from '../UI/heading';
 import { PlayIcon } from '../UI/icon/Icon';
 import './index.scss';
@@ -26,4 +27,8 @@ const Media = (props) => {
     </React.Fragment>
   );
 };
+Media.propTypes={
+  header:PropTypes.string,
+  subHeader:PropTypes.string,
+} 
 export default Media;   

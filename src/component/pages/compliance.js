@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { CardLeaf } from '../UI/card';
 import {H3} from '../UI/heading';
 
@@ -14,4 +15,8 @@ const Compliance = (props) => {
     </CardLeaf>
   );
 };
+Compliance.propTypes={
+  header:PropTypes.string,
+  subHeader:PropTypes.string,
+} 
 export default Compliance;
