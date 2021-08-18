@@ -18,5 +18,5 @@ const Compliance = (props) => {
 Compliance.propTypes={
   header:PropTypes.string,
   subHeader:PropTypes.string,
-} 
+}; 
 export default Compliance;

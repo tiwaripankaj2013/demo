@@ -30,5 +30,5 @@ const Media = (props) => {
 Media.propTypes={
   header:PropTypes.string,
   subHeader:PropTypes.string,
-} 
+}; 
 export default Media;   
